@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./reset.css"/>
+  <link rel="stylesheet" href="./main.css"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Password generator app</title>
+</head>
+<body>
+  <main>
+    <h1 class="title">Password Generator</h1>
+    <div class="generated-password-container">
+      <h4 class="generated-password">PTx1f5DaFX</h4>
+      <div class="copied">
+        <p id="copy-text">COPIED</p>
+        <img id="copy" src="./assets/images/icon-copy.svg" alt="Copy"/>
+      </div>
+    </div>
+    <div class="big-container">
+      <div class="filter">
+        <p class="filter-length">Character Length</p>
+        <p class="filter-length-number">10</p>
+      </div>
+      <input id="slidering" type="range" min="0" max="20" value="10"/>
+      <section class="only-section">
+        <div class="check-container">
+          <input id="uppercase-checker" type="checkbox"/>
+          <label for="uppercase-checker">Include UpperCase Letters</label>
+        </div>
+        <div class="check-container">
+          <input id="lowercase-checker" type="checkbox"/>
+          <label for="lowercase-checker">Include Lowercase Letters</label>
+        </div>
+        <div class="check-container">
+          <input id="numbers-checker" type="checkbox"/>
+          <label for="numbers-checker">Include Nmbers Letters</label>
+        </div>
+        <div class="check-container">
+          <input id="symbols-checker" type="checkbox"/>
+          <label for="symbols-checker">Include Symbols Letters</label>
+        </div>
+      </section>
+      <div class="strength-container">
+        <p id="strength-text">STRENGTH</p>
+        <div class="sub-container">
+          <p id="strength">empty</p>
+          <div class="columns-container">
+            <div class="columns first"></div>
+            <div class="columns second"></div>
+            <div class="columns third"></div>
+            <div class="columns fourth"></div>
+          </div>
+        </div>
+      </div>
+      <button id="generate">
+        <p>GENERATE</p>
+        <img class="arrow" src="./assets/images/icon-arrow-right.svg" alt="Arrow"/>
+      </button>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

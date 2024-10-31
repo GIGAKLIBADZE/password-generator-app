@@ -101,14 +101,17 @@ generate.addEventListener("click", (event) => {
 
     const colors = ["#f64a4a", "#fb7c58", "#f8cd65", "#a4ffaf"];
     const columns = [firstCol, secondCol, thirdCol, fourthCol];
+    const messages = ["TOO WEAK", "WEAK", "MEDIUM", "STRONG"];
 
     columns.forEach((col, index) => {
         if (counter > index) {
             col.forEach((c) => {
                 c.style.backgroundColor = colors[counter - 1];
                 c.style.border = "none";
-            })
+            });
         }
+
+        strengthText.innerHTML = messages[counter - 1];
     });
 });
 
